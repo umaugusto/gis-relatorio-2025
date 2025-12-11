@@ -1,17 +1,17 @@
 /* ===========================================
-   DESIGN TOKENS — Wireframe Grayscale
-   Template de Apresentação HTML/CSS
+   DESIGN TOKENS — Einstein Hospital Israelita
+   Identidade Visual 2025 (Guia de Marca)
    =========================================== */
 
-/* Google Fonts - Work Sans */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+/* Google Fonts - Montserrat (tipografia institucional) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
   /* ========================================
-     TIPOGRAFIA
+     TIPOGRAFIA — Montserrat
      ======================================== */
-  --font-display: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Montserrat', Arial, Helvetica, sans-serif;
+  --font-body: 'Montserrat', Arial, Helvetica, sans-serif;
 
   /* Hierarquia de tamanhos */
   --font-size-hero: 72px;
@@ -22,7 +22,7 @@
   --font-size-small: 14px;
   --font-size-tiny: 12px;
 
-  /* Pesos */
+  /* Pesos (Montserrat) */
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -36,36 +36,64 @@
   --line-height-relaxed: 1.7;
 
   /* ========================================
-     CORES — Escala de Cinza (Wireframe)
+     PALETA EINSTEIN — Guia de Marca 2025
      ======================================== */
-  --color-gray-900: #1a1a1a;
-  --color-gray-800: #2d2d2d;
-  --color-gray-700: #4a4a4a;
-  --color-gray-600: #5c5c5c;
-  --color-gray-500: #737373;
-  --color-gray-400: #8f8f8f;
-  --color-gray-300: #a3a3a3;
-  --color-gray-200: #d4d4d4;
-  --color-gray-100: #e5e5e5;
-  --color-gray-50: #f5f5f5;
-  --color-white: #ffffff;
+  
+  /* Cores Principais */
+  --einstein-azul-escuro: #00539A;
+  --einstein-azul-medio: #0096D2;
+  --einstein-azul-claro: #00DBFF;
+  --einstein-branco: #FFFFFF;
+  
+  /* Gradiente institucional (60/25/15) */
+  --einstein-gradiente: linear-gradient(135deg, #00539A 0%, #0096D2 50%, #00DBFF 100%);
+  --einstein-gradiente-vertical: linear-gradient(180deg, #00539A 0%, #0096D2 60%, #00DBFF 100%);
+  
+  /* Escala de Cinzas (Guia de Marca) */
+  --einstein-gray-900: #241F21;
+  --einstein-gray-700: #545454;
+  --einstein-gray-500: #A6A8AB;
+  --einstein-gray-300: #BABABA;
+  --einstein-gray-100: #D1D4D4;
+  --einstein-gray-50: #F2F2F2;
 
-  /* Semânticos */
-  --color-text-primary: var(--color-gray-900);
-  --color-text-secondary: var(--color-gray-600);
-  --color-text-tertiary: var(--color-gray-400);
-  --color-text-inverse: var(--color-white);
-  --color-background: var(--color-white);
-  --color-background-alt: var(--color-gray-50);
-  --color-border: var(--color-gray-200);
-  --color-border-strong: var(--color-gray-300);
+  /* Cores por Público (usar com moderação) */
+  --einstein-rosa: #EE5A7B;
+  --einstein-laranja: #E3740C;
+  --einstein-roxo: #7846D4;
+
+  /* Semânticas */
+  --color-text-primary: var(--einstein-gray-900);
+  --color-text-secondary: var(--einstein-gray-700);
+  --color-text-tertiary: var(--einstein-gray-500);
+  --color-text-inverse: var(--einstein-branco);
+  --color-text-brand: var(--einstein-azul-escuro);
+  
+  --color-background: var(--einstein-branco);
+  --color-background-alt: var(--einstein-gray-50);
+  --color-background-brand: var(--einstein-azul-escuro);
+  
+  --color-border: var(--einstein-gray-100);
+  --color-border-strong: var(--einstein-gray-300);
+  
+  --color-accent: var(--einstein-azul-medio);
+  --color-accent-light: var(--einstein-azul-claro);
+
+  /* Aliases para compatibilidade com main.css */
+  --color-gray-900: var(--einstein-gray-900);
+  --color-gray-700: var(--einstein-gray-700);
+  --color-gray-500: var(--einstein-gray-500);
+  --color-gray-300: var(--einstein-gray-300);
+  --color-gray-100: var(--einstein-gray-100);
+  --color-gray-50: var(--einstein-gray-50);
+  --color-white: var(--einstein-branco);
 
   /* ========================================
      DIMENSÕES DO SLIDE
      ======================================== */
   --slide-width: 1280px;
   --slide-height: 720px;
-  --slide-padding: 64px;
+  --slide-padding: 48px;
 
   /* ========================================
      ESPAÇAMENTO
@@ -82,12 +110,12 @@
   --space-10: 128px;
 
   /* ========================================
-     EFEITOS
+     EFEITOS — Sombras com tom Einstein
      ======================================== */
-  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.10);
+  --shadow-subtle: 0 1px 3px rgba(0, 83, 154, 0.06);
+  --shadow-sm: 0 2px 8px rgba(0, 83, 154, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 83, 154, 0.10);
+  --shadow-lg: 0 8px 32px rgba(0, 83, 154, 0.12);
   
   --radius-sm: 2px;
   --radius-md: 4px;
