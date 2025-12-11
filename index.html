@@ -618,27 +618,69 @@
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
+
       <div class="slide__content">
-        <h2 style="margin-bottom: var(--space-5);">A APS do Einstein</h2>
-        <div class="layout-2col">
-          <div class="card">
-            <h3 class="card__title">Clínicas Einstein</h3>
-            <p class="card__text">Unidades próprias que atendem colaboradores Einstein (programa Cuidar) e clientes corporativos (B2B). Foco em cuidado longitudinal e prevenção.</p>
+        <div class="aps-layout">
+          <!-- Coluna Esquerda: Conceito + Tríade -->
+          <div class="aps-layout__main">
+            <div class="aps-intro">
+              <h2>A APS do Einstein</h2>
+              <p>A Atenção Primária à Saúde é o primeiro nível de contato dos indivíduos com o sistema de saúde. Caracteriza-se pelo cuidado longitudinal, pela coordenação do cuidado entre especialidades e pelo foco em prevenção e promoção da saúde.</p>
+            </div>
+
+            <!-- Tríade de Cuidado -->
+            <div class="triade">
+              <span class="triade__label">Modelo Einstein — Tríade de Cuidado</span>
+              <div class="triade__content">
+                <div class="triade__item">
+                  <div class="triade__circle">MF</div>
+                  <span class="triade__name">Médico de Família</span>
+                </div>
+                <span class="triade__connector"></span>
+                <div class="triade__item">
+                  <div class="triade__circle">EF</div>
+                  <span class="triade__name">Enfermeiro de Família</span>
+                </div>
+                <span class="triade__connector"></span>
+                <div class="triade__item">
+                  <div class="triade__circle">CC</div>
+                  <span class="triade__name">Coordenador do Cuidado</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3 class="card__title">OnSites</h3>
-            <p class="card__text">Unidades instaladas na infraestrutura do cliente contratante, atendendo a população daquela empresa. Modelo replicável com adaptações locais.</p>
+
+          <!-- Coluna Direita: Modelos -->
+          <div class="aps-layout__sidebar">
+            <div class="modelo modelo--destaque">
+              <span class="modelo__badge">Escopo do Projeto</span>
+              <h3 class="modelo__title">B2B Corporativo</h3>
+              <div class="modelo__items">
+                <div class="modelo__item">
+                  <strong>Clínicas Einstein</strong>
+                  <span>Unidades próprias que atendem clientes corporativos. Localizadas em Alto de Pinheiros, Ibirapuera, Perdizes e outras regiões.</span>
+                </div>
+                <div class="modelo__item">
+                  <strong>OnSite Clinic</strong>
+                  <span>Clínicas instaladas dentro da infraestrutura do cliente contratante, atendendo a população daquela empresa.</span>
+                </div>
+              </div>
+            </div>
+            <div class="modelo modelo--secondary">
+              <h3 class="modelo__title">Programa Cuidar</h3>
+              <span class="modelo__desc">Programa de atenção primária voltado exclusivamente aos colaboradores do Einstein. Fora do escopo deste projeto.</span>
+            </div>
           </div>
         </div>
-        <p style="margin-top: var(--space-5); font-size: var(--font-size-small); color: var(--color-text-tertiary);">A APS é o primeiro nível de contato com o sistema de saúde. Caracteriza-se pelo cuidado longitudinal, coordenação entre especialidades e foco em prevenção.</p>
       </div>
+
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
         <span class="slide__pagination">12</span>
       </footer>
     </section>
 
-    <!-- SLIDE 13 — Avaliação CBA + Achados (Consolidado) -->
+    <!-- SLIDE 13 — Avaliação CBA -->
     <section class="slide" id="slide-13">
       <header class="slide__header">
         <nav class="slide__nav">
@@ -651,36 +693,38 @@
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
       <div class="slide__content">
-        <div style="display: flex; gap: var(--space-6); align-items: flex-start;">
+        <div class="cba-layout">
           <!-- Coluna esquerda: Métrica -->
-          <div style="flex: 0 0 280px; text-align: center;">
-            <span style="font-size: 96px; font-weight: 700; color: var(--color-primary); line-height: 1;">62</span>
-            <p style="font-size: var(--font-size-body); color: var(--color-text-secondary); margin-top: var(--space-2);">atividades identificadas</p>
-            <p style="font-size: var(--font-size-small); color: var(--color-text-tertiary); margin-top: var(--space-3);">Nota 9,2 — mínimo para JCI era 9,7</p>
+          <div class="cba-metric">
+            <span class="cba-metric__value">62</span>
+            <p class="cba-metric__label">atividades identificadas</p>
+            <p class="cba-metric__context">Avaliação CBA · Maio 2025</p>
+            <p class="cba-metric__note">Nota 9,2 — mínimo para certificação JCI era 9,7</p>
           </div>
           
-          <!-- Coluna direita: Categorias de achados -->
-          <div style="flex: 1;">
-            <h2 style="font-size: var(--font-size-h3); margin-bottom: var(--space-4);">Principais Achados CBA</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);">
-              <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; border-left: 3px solid var(--color-primary);">
-                <strong style="font-size: var(--font-size-small); color: var(--color-primary);">Ambiente</strong>
-                <p style="font-size: var(--font-size-tiny); color: var(--color-text-secondary); margin-top: var(--space-1);">Tomadas desprotegidas, infiltrações, quadro elétrico aberto, resíduos perigosos</p>
+          <!-- Coluna direita: Visão estratégica -->
+          <div class="cba-insights">
+            <h2>O que a avaliação revelou</h2>
+            <p class="cba-insights__intro">Além das não conformidades pontuais, o relatório apontou um problema estrutural na APS:</p>
+            
+            <div class="cba-insights__grid">
+              <div class="cba-insight">
+                <strong>Processos não padronizados</strong>
+                <span>Políticas matriciais do hospital não estavam adaptadas para o contexto ambulatorial da APS. Cada unidade operava com variações próprias, dificultando a replicação de boas práticas.</span>
               </div>
-              <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; border-left: 3px solid var(--color-primary);">
-                <strong style="font-size: var(--font-size-small); color: var(--color-primary);">Indicadores</strong>
-                <p style="font-size: var(--font-size-tiny); color: var(--color-text-secondary); margin-top: var(--space-1);">Sem desfechos validados para crônicos, sem programa de antimicrobianos</p>
+              <div class="cba-insight">
+                <strong>Indicadores sem validação</strong>
+                <span>Programas de acompanhamento de crônicos (diabetes, hipertensão) funcionavam sem métricas de desfecho estruturadas. Não havia como demonstrar efetividade clínica.</span>
               </div>
-              <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; border-left: 3px solid var(--color-primary);">
-                <strong style="font-size: var(--font-size-small); color: var(--color-primary);">Documentação</strong>
-                <p style="font-size: var(--font-size-tiny); color: var(--color-text-secondary); margin-top: var(--space-1);">Perfis de cuidado não padronizados, políticas matriciais não adaptadas para APS</p>
+              <div class="cba-insight">
+                <strong>Documentação fragmentada</strong>
+                <span>Informação dispersa entre Medical Suite, DM Docs, pastas pessoais, canais de Teams e e-mails. Não havia repositório único onde um colaborador pudesse encontrar "como se faz X".</span>
               </div>
-              <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; border-left: 3px solid var(--color-primary);">
-                <strong style="font-size: var(--font-size-small); color: var(--color-primary);">Processos</strong>
-                <p style="font-size: var(--font-size-tiny); color: var(--color-text-secondary); margin-top: var(--space-1);">Transferência externa sem follow-up, populações vulneráveis não mapeadas</p>
+              <div class="cba-insight">
+                <strong>Rastreabilidade limitada</strong>
+                <span>Dificuldade de identificar responsáveis por cada processo e de recuperar histórico de decisões. Conhecimento institucional dependia da memória individual.</span>
               </div>
             </div>
-            <p style="font-size: var(--font-size-tiny); color: var(--color-text-tertiary); margin-top: var(--space-3);">Problema de fundo: informação dispersa entre Medical Suite, DM Docs, pastas pessoais, Teams e e-mails.</p>
           </div>
         </div>
       </div>
@@ -703,60 +747,62 @@
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
       <div class="slide__content">
-        <h2 style="margin-bottom: var(--space-4);">Governança — Metodologia REACE</h2>
-        
-        <!-- Linha 1: Autoridade e Responsável -->
-        <div style="display: flex; gap: var(--space-5); margin-bottom: var(--space-4);">
-          <div style="flex: 1; background: var(--color-primary); color: white; padding: var(--space-3); border-radius: 8px; text-align: center;">
-            <span style="font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 1px; opacity: 0.8;">Autoridade</span>
-            <p style="font-size: var(--font-size-body); font-weight: 600; margin-top: var(--space-1);">Gabriela Sato</p>
-            <p style="font-size: var(--font-size-tiny); opacity: 0.8;">Gerente APS</p>
-          </div>
-          <div style="flex: 1; background: var(--color-secondary); color: white; padding: var(--space-3); border-radius: 8px; text-align: center;">
-            <span style="font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 1px; opacity: 0.8;">Responsável</span>
-            <p style="font-size: var(--font-size-body); font-weight: 600; margin-top: var(--space-1);">Antonio Augusto</p>
-            <p style="font-size: var(--font-size-tiny); opacity: 0.8;">Coordenação do Projeto</p>
-          </div>
-        </div>
-
-        <!-- Linha 2: Consultados e Informados -->
-        <div style="display: flex; gap: var(--space-5); margin-bottom: var(--space-4);">
-          <div style="flex: 1; background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; border: 1px solid var(--color-gray-200);">
-            <span style="font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-tertiary);">Consultados</span>
-            <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-2);">
-              <span style="background: white; padding: 4px 12px; border-radius: 16px; font-size: var(--font-size-tiny); border: 1px solid var(--color-gray-200);">Demian Alves</span>
-              <span style="background: white; padding: 4px 12px; border-radius: 16px; font-size: var(--font-size-tiny); border: 1px solid var(--color-gray-200);">Camila Zanotti</span>
-              <span style="background: white; padding: 4px 12px; border-radius: 16px; font-size: var(--font-size-tiny); border: 1px solid var(--color-gray-200);">Michele Almeida</span>
+        <div class="reace">
+          <h2 class="reace__title">Governança — Metodologia REACE</h2>
+          
+          <!-- Linha 1: Autoridade e Responsável -->
+          <div class="reace__row reace__row--leaders">
+            <div class="reace__card reace__card--autoridade">
+              <span class="reace__label">Autoridade</span>
+              <p class="reace__name">Gabriela Sato</p>
+              <p class="reace__role">Gerente APS</p>
             </div>
-            <p style="font-size: 10px; color: var(--color-text-tertiary); margin-top: var(--space-2);">Coordenadores APS</p>
-          </div>
-          <div style="flex: 1; background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; border: 1px solid var(--color-gray-200);">
-            <span style="font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-tertiary);">Informados</span>
-            <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-2);">
-              <span style="background: white; padding: 4px 12px; border-radius: 16px; font-size: var(--font-size-tiny); border: 1px solid var(--color-gray-200);">Bruno Watanabe</span>
-              <span style="background: white; padding: 4px 12px; border-radius: 16px; font-size: var(--font-size-tiny); border: 1px solid var(--color-gray-200);">Raquel Veríssimo</span>
-              <span style="background: white; padding: 4px 12px; border-radius: 16px; font-size: var(--font-size-tiny); border: 1px solid var(--color-gray-200);">Aline Marques</span>
+            <div class="reace__card reace__card--responsavel">
+              <span class="reace__label">Responsável</span>
+              <p class="reace__name">Antonio Augusto</p>
+              <p class="reace__role">Apoio e Facilitação</p>
             </div>
-            <p style="font-size: 10px; color: var(--color-text-tertiary); margin-top: var(--space-2);">Liderança e parceiros</p>
           </div>
-        </div>
 
-        <!-- Linha 3: Equipe -->
-        <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; border: 1px solid var(--color-gray-200);">
-          <span style="font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-tertiary);">Equipe — Integrantes do Projeto</span>
-          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-2); margin-top: var(--space-2);">
-            <span style="font-size: var(--font-size-tiny); color: var(--color-text-secondary);">Érica Marvila Garcia</span>
-            <span style="font-size: var(--font-size-tiny); color: var(--color-text-secondary);">Gabriel Lacerda</span>
-            <span style="font-size: var(--font-size-tiny); color: var(--color-text-secondary);">Tânia Regina Afonso</span>
-            <span style="font-size: var(--font-size-tiny); color: var(--color-text-secondary);">Erika Midori Kurogi</span>
-            <span style="font-size: var(--font-size-tiny); color: var(--color-text-secondary);">Thaís Ortiz</span>
-            <span style="font-size: var(--font-size-tiny); color: var(--color-text-secondary);">Tatiana Machado</span>
-            <span style="font-size: var(--font-size-tiny); color: var(--color-text-secondary);">Ana Claudia Medeiros</span>
-            <span style="font-size: var(--font-size-tiny); color: var(--color-text-secondary);">Mariana Moratori</span>
+          <!-- Linha 2: Consultados e Informados -->
+          <div class="reace__row">
+            <div class="reace__card reace__card--light">
+              <span class="reace__label">Consultados</span>
+              <div class="reace__tags">
+                <span class="reace__tag">Demian Alves</span>
+                <span class="reace__tag">Camila Zanotti</span>
+                <span class="reace__tag">Michele Almeida</span>
+              </div>
+              <p class="reace__note">Coordenadores APS</p>
+            </div>
+            <div class="reace__card reace__card--light">
+              <span class="reace__label">Informados</span>
+              <div class="reace__tags">
+                <span class="reace__tag">Bruno Budicin</span>
+                <span class="reace__tag">Raquel Veríssimo</span>
+                <span class="reace__tag">Aline Marques</span>
+              </div>
+              <p class="reace__note">Liderança e parceiros</p>
+            </div>
           </div>
+
+          <!-- Linha 3: Equipe -->
+          <div class="reace__card reace__card--equipe">
+            <span class="reace__label">Equipe — Integrantes do Projeto</span>
+            <div class="reace__grid">
+              <span>Érica Marvila Garcia</span>
+              <span>Gabriel Lacerda</span>
+              <span>Tânia Regina Afonso</span>
+              <span>Erika Midori Kurogi</span>
+              <span>Thaís Ortiz</span>
+              <span>Tatiana Machado</span>
+              <span>Ana Claudia Medeiros</span>
+              <span>Mariana Moratori</span>
+            </div>
+          </div>
+          
+          <p class="reace__footer">Parceria metodológica: Time de Soluções / Health Design Lab</p>
         </div>
-        
-        <p style="margin-top: var(--space-3); font-size: var(--font-size-tiny); color: var(--color-text-tertiary);">Parceria metodológica: Time de Soluções / Health Design Lab</p>
       </div>
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
@@ -764,100 +810,89 @@
       </footer>
     </section>
 
-    <!-- ==========================================
-         SLIDE 16 — Capa Seção 02: Metodologia
-         ========================================== -->
-    <section class="slide slide--section" id="slide-15">
+    <!-- SLIDE 15 — Metodologia -->
+    <section class="slide" id="slide-15">
       <header class="slide__header">
         <nav class="slide__nav">
           <a href="#slide-1" class="nav__item">Início</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-16" class="nav__item nav__item--active">02 Metodologia</a>
-        </nav>
-        <div class="slide__logo"><img src="assets/logo-einstein-white.png" alt="Einstein Hospital Israelita"></div>
-      </header>
-      <div class="slide__content">
-        <span class="section__number">02</span>
-        <h2 class="section__title">Metodologia</h2>
-        <p class="section__subtitle">Como trabalhamos</p>
-      </div>
-      <footer class="slide__footer">
-        <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">15</span>
-      </footer>
-    </section>
-
-    <!-- SLIDE 16 — Metodologia e Ferramentas (Consolidado) -->
-    <section class="slide" id="slide-16">
-      <header class="slide__header">
-        <nav class="slide__nav">
-          <a href="#slide-1" class="nav__item">Início</a>
-          <span class="nav__separator">/</span>
-          <a href="#slide-15" class="nav__item">02 Metodologia</a>
-          <span class="nav__separator">/</span>
-          <a href="#slide-16" class="nav__item nav__item--active">Abordagem</a>
+          <a href="#slide-15" class="nav__item nav__item--active">02 Metodologia</a>
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
       <div class="slide__content">
-        <h2 style="margin-bottom: var(--space-4);">Como Trabalhamos</h2>
-        
-        <div style="display: flex; gap: var(--space-5); align-items: stretch;">
-          <!-- Coluna Esquerda: Abordagem -->
-          <div style="flex: 1;">
-            <p style="font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-tertiary); margin-bottom: var(--space-3);">Abordagem</p>
-            
-            <div style="display: flex; flex-direction: column; gap: var(--space-3);">
-              <div style="display: flex; align-items: center; gap: var(--space-3); background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%); color: white; padding: var(--space-3); border-radius: 8px;">
-                <span style="font-size: 24px;">◇◇</span>
-                <div>
-                  <strong style="font-size: var(--font-size-body);">Design</strong>
-                  <p style="font-size: var(--font-size-tiny); opacity: 0.9; margin-top: 2px;">Duplo diamante: problema → definição → solução → entrega</p>
-                </div>
-              </div>
+        <div class="metodologia">
+          <h2 class="metodologia__title">Metodologia</h2>
+          
+          <div class="metodologia__layout">
+            <!-- Coluna Abordagem -->
+            <div class="metodologia__col">
+              <span class="metodologia__label">Abordagem</span>
               
-              <div style="display: flex; align-items: center; gap: var(--space-3); background: var(--color-secondary); color: white; padding: var(--space-3); border-radius: 8px;">
-                <span style="font-size: 24px;">👥</span>
-                <div>
-                  <strong style="font-size: var(--font-size-body);">Colaborativo</strong>
-                  <p style="font-size: var(--font-size-tiny); opacity: 0.9; margin-top: 2px;">Com stakeholders, não para eles. Entrevistas e GTs temáticos.</p>
+              <div class="metodologia__items">
+                <div class="metodologia__item">
+                  <div class="metodologia__icon metodologia__icon--design">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                      <path d="M4 14L14 4L24 14L14 24L4 14Z" stroke="currentColor" stroke-width="2"/>
+                      <path d="M9 14L14 9L19 14L14 19L9 14Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <div class="metodologia__content">
+                    <strong>Design</strong>
+                    <span>Duplo diamante: primeiro explorar o problema (o que estamos tentando resolver?), depois convergir para definições, então explorar soluções, e por fim convergir para entregas concretas.</span>
+                  </div>
                 </div>
-              </div>
-              
-              <div style="display: flex; align-items: center; gap: var(--space-3); background: var(--color-accent); color: var(--color-primary); padding: var(--space-3); border-radius: 8px;">
-                <span style="font-size: 24px;">🔄</span>
-                <div>
-                  <strong style="font-size: var(--font-size-body);">Ágil</strong>
-                  <p style="font-size: var(--font-size-tiny); opacity: 0.9; margin-top: 2px;">Sprints mensais. Checkpoints com liderança. Entregas frequentes.</p>
+                
+                <div class="metodologia__item">
+                  <div class="metodologia__icon metodologia__icon--colab">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                      <circle cx="9" cy="10" r="3.5" stroke="currentColor" stroke-width="2"/>
+                      <circle cx="19" cy="10" r="3.5" stroke="currentColor" stroke-width="2"/>
+                      <path d="M4 24C4 20 6 17 9 17C11 17 12.5 18 14 18C15.5 18 17 17 19 17C22 17 24 20 24 24" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <div class="metodologia__content">
+                    <strong>Colaborativo</strong>
+                    <span>Definições construídas com os stakeholders, não para eles. Entrevistas com coordenadores, grupos de trabalho temáticos e reuniões de alinhamento trouxeram múltiplas perspectivas.</span>
+                  </div>
+                </div>
+                
+                <div class="metodologia__item">
+                  <div class="metodologia__icon metodologia__icon--agil">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                      <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="2"/>
+                      <path d="M14 8V14L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="metodologia__content">
+                    <strong>Ágil</strong>
+                    <span>Sprints mensais ao invés de semanais — ciclos mais longos permitiram trabalho substantivo entre encontros. Checkpoints regulares com liderança para visibilidade e correção de rumo.</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <!-- Coluna Direita: Ferramentas -->
-          <div style="flex: 1;">
-            <p style="font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-tertiary); margin-bottom: var(--space-3);">Ferramentas</p>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);">
-              <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; text-align: center; border: 1px solid var(--color-gray-200);">
-                <span style="font-size: 28px; display: block; margin-bottom: var(--space-1);">📋</span>
-                <strong style="font-size: var(--font-size-small); color: var(--color-primary);">REACE</strong>
-                <p style="font-size: 10px; color: var(--color-text-tertiary); margin-top: 4px;">Clareza de papéis</p>
-              </div>
-              <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; text-align: center; border: 1px solid var(--color-gray-200);">
-                <span style="font-size: 28px; display: block; margin-bottom: var(--space-1);">💬</span>
-                <strong style="font-size: var(--font-size-small); color: var(--color-primary);">Teams</strong>
-                <p style="font-size: 10px; color: var(--color-text-tertiary); margin-top: 4px;">Comunicação</p>
-              </div>
-              <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; text-align: center; border: 1px solid var(--color-gray-200);">
-                <span style="font-size: 28px; display: block; margin-bottom: var(--space-1);">📁</span>
-                <strong style="font-size: var(--font-size-small); color: var(--color-primary);">SharePoint</strong>
-                <p style="font-size: 10px; color: var(--color-text-tertiary); margin-top: 4px;">Repositório central</p>
-              </div>
-              <div style="background: var(--color-gray-50); padding: var(--space-3); border-radius: 8px; text-align: center; border: 1px solid var(--color-gray-200);">
-                <span style="font-size: 28px; display: block; margin-bottom: var(--space-1);">🎨</span>
-                <strong style="font-size: var(--font-size-small); color: var(--color-primary);">Miro</strong>
-                <p style="font-size: 10px; color: var(--color-text-tertiary); margin-top: 4px;">Facilitação visual</p>
+            <!-- Coluna Ferramentas -->
+            <div class="metodologia__col">
+              <span class="metodologia__label">Ferramentas</span>
+              
+              <div class="metodologia__tools">
+                <div class="metodologia__tool">
+                  <strong>REACE</strong>
+                  <span>Metodologia para clareza de papéis: Responsável, Equipe, Autoridade, Consultados, Informados</span>
+                </div>
+                <div class="metodologia__tool">
+                  <strong>Teams</strong>
+                  <span>Canal de comunicação do projeto, reuniões de alinhamento e repositório de arquivos de trabalho</span>
+                </div>
+                <div class="metodologia__tool">
+                  <strong>SharePoint</strong>
+                  <span>Repositório centralizado de documentos da APS, substituindo a dispersão entre pastas e e-mails</span>
+                </div>
+                <div class="metodologia__tool">
+                  <strong>Miro</strong>
+                  <span>Facilitação visual de sessões colaborativas, mapeamento de processos e construção de artefatos</span>
+                </div>
               </div>
             </div>
           </div>
@@ -865,19 +900,18 @@
       </div>
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">16</span>
+        <span class="slide__pagination">15</span>
       </footer>
     </section>
-
     <!-- ==========================================
-         SLIDE 17 — Capa Seção 03: Resultados
+         SLIDE 16 — Capa Seção 03: Resultados
          ========================================== -->
-    <section class="slide slide--section" id="slide-17">
+    <section class="slide slide--section" id="slide-16">
       <header class="slide__header">
         <nav class="slide__nav">
           <a href="#slide-1" class="nav__item">Início</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-17" class="nav__item nav__item--active">03 Resultados</a>
+          <a href="#slide-16" class="nav__item nav__item--active">03 Resultados</a>
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-white.png" alt="Einstein Hospital Israelita"></div>
       </header>
@@ -888,19 +922,19 @@
       </div>
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">17</span>
+        <span class="slide__pagination">16</span>
       </footer>
     </section>
 
-    <!-- SLIDE 20 — Fase CBA -->
-    <section class="slide" id="slide-18">
+    <!-- SLIDE 17 — Fase CBA -->
+    <section class="slide" id="slide-17">
       <header class="slide__header">
         <nav class="slide__nav">
           <a href="#slide-1" class="nav__item">Início</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-17" class="nav__item">03 Resultados</a>
+          <a href="#slide-16" class="nav__item">03 Resultados</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-18" class="nav__item nav__item--active">Fase CBA</a>
+          <a href="#slide-17" class="nav__item nav__item--active">Fase CBA</a>
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
@@ -920,19 +954,19 @@
       </div>
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">18</span>
+        <span class="slide__pagination">17</span>
       </footer>
     </section>
 
-    <!-- SLIDE 21 — Entregas Fase CBA -->
-    <section class="slide" id="slide-19">
+    <!-- SLIDE 18 — Entregas Fase CBA -->
+    <section class="slide" id="slide-18">
       <header class="slide__header">
         <nav class="slide__nav">
           <a href="#slide-1" class="nav__item">Início</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-17" class="nav__item">03 Resultados</a>
+          <a href="#slide-16" class="nav__item">03 Resultados</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-19" class="nav__item nav__item--active">Entregas CBA</a>
+          <a href="#slide-18" class="nav__item nav__item--active">Entregas CBA</a>
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
