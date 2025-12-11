@@ -502,3 +502,226 @@ No DevTools, regras riscadas (~~strikethrough~~) foram sobrescritas. A regra no 
 ---
 
 *Última atualização: 11 de dezembro de 2025*
+
+
+---
+
+# PLANO DE TRABALHO — GIS Relatório de Encerramento 2025
+
+Este plano orienta a construção da apresentação. Atualizar após cada pacote de trabalho.
+
+**Última atualização:** 11/12/2025
+**Status geral:** 🟡 Em andamento — Estrutura definida, aguardando construção
+
+---
+
+## Estrutura Geral
+
+| Parte | Slides | Descrição | Status |
+|-------|--------|-----------|--------|
+| **Síntese Executiva** | 1-10 | Visão rápida para liderança | 🟡 Parcial |
+| **Detalhamento** | 11-36 | Memória institucional completa | ⚪ Não iniciado |
+
+**Total:** 36 slides
+
+---
+
+## PARTE 1 — SÍNTESE EXECUTIVA (10 slides)
+
+| # | Slide | Layout | Status |
+|---|-------|--------|--------|
+| 1 | Capa | Hero escuro | ✅ Criado |
+| 2 | Sumário | Lista navegável | ⚪ Pendente |
+| 3 | Origem do Projeto | Número destaque | ⚪ Pendente |
+| 4 | O Desafio | Texto centralizado | ⚪ Pendente |
+| 5 | Jornada | Timeline horizontal | ⚪ Pendente |
+| 6 | Principais Entregas | Lista com ícones | ⚪ Pendente |
+| 7 | Aprendizados-Chave | Grid 2x2 | ⚪ Pendente |
+| 8 | Direcionamento 2026 | Diagrama 4 pilares | ⚪ Pendente |
+| 9 | Próximos Passos | Timeline 3 fases | ⚪ Pendente |
+| 10 | Transição | Minimalista | ⚪ Pendente |
+
+---
+
+## PARTE 2 — DETALHAMENTO (26 slides)
+
+### Seção 01: Contexto e Justificativa
+
+| # | Slide | Layout | Status |
+|---|-------|--------|--------|
+| 11 | Capa de Seção | Número grande + título | ⚪ Pendente |
+| 12 | A APS do Einstein | 2 colunas | ⚪ Pendente |
+| 13 | Avaliação CBA | Número destaque (9,2) | ⚪ Pendente |
+| 14 | O Problema de Fundo | Texto + diagrama | ⚪ Pendente |
+| 15 | Equipe do Projeto | Tabela RACI | ⚪ Pendente |
+
+### Seção 02: Metodologia
+
+| # | Slide | Layout | Status |
+|---|-------|--------|--------|
+| 16 | Capa de Seção | Número grande + título | ⚪ Pendente |
+| 17 | Abordagem de Trabalho | 3 blocos | ⚪ Pendente |
+| 18 | Princípios e Ferramentas | Grid 2x2 | ⚪ Pendente |
+
+
+### Seção 03: Resultados
+
+| # | Slide | Layout | Status |
+|---|-------|--------|--------|
+| 19 | Capa de Seção | Número grande + título | ⚪ Pendente |
+| 20 | Fase CBA (Mai-Ago) | Timeline + texto | ⚪ Pendente |
+| 21 | Entregas da Fase CBA | Lista com bullets | ⚪ Pendente |
+| 22 | Primeira Inflexão (Set) | Número destaque | ⚪ Pendente |
+| 23 | Experimento Ágil — Estrutura | 4 colunas (times) | ⚪ Pendente |
+| 24 | Experimento Ágil — Descobertas | Lista | ⚪ Pendente |
+| 25 | Segunda Inflexão (Nov) | Número destaque | ⚪ Pendente |
+| 26 | Convergência SharePoint | Texto + benefícios | ⚪ Pendente |
+
+### Seção 04: Aprendizados
+
+| # | Slide | Layout | Status |
+|---|-------|--------|--------|
+| 27 | Capa de Seção | Número grande + título | ⚪ Pendente |
+| 28 | O que Funcionou | Grid 2x2 | ⚪ Pendente |
+| 29 | Oportunidades de Melhoria | Grid 2x2 | ⚪ Pendente |
+| 30 | Heurísticas para 2026 | Lista destacada | ⚪ Pendente |
+
+### Seção 05: Direcionamento 2026
+
+| # | Slide | Layout | Status |
+|---|-------|--------|--------|
+| 31 | Capa de Seção | Número grande + título | ⚪ Pendente |
+| 32 | Tese Central | Texto destacado | ⚪ Pendente |
+| 33 | SharePoint — 4 Pilares | Grid 4 colunas | ⚪ Pendente |
+| 34 | Recomendações | Lista numerada | ⚪ Pendente |
+| 35 | Cronograma 2026 | Timeline 3 fases | ⚪ Pendente |
+
+### Encerramento
+
+| # | Slide | Layout | Status |
+|---|-------|--------|--------|
+| 36 | Fechamento | Hero "Obrigado" | ✅ Criado |
+
+---
+
+## PACOTES DE TRABALHO
+
+### Pacote 0: Fundação ✅ CONCLUÍDO
+- [x] Estrutura de pastas
+- [x] README com orientações técnicas
+- [x] CSS base (variables.css, main.css)
+- [x] Slides capa e fechamento
+- [x] Repositório Git inicializado
+- [x] Estrutura de slides planejada
+
+
+### Pacote 1: Layouts Base 🟡 PRÓXIMO
+- [ ] Layout: Capa de Seção (slide--section)
+- [ ] Layout: Sumário (slide--toc)
+- [ ] Layout: Número Destaque (slide--metric)
+- [ ] Layout: Timeline (slide--timeline)
+- [ ] Layout: Grid 2x2 (layout-2x2)
+- [ ] Layout: Grid 4 colunas (layout-4col)
+- [ ] Layout: Tabela (slide--table)
+- [ ] Layout: Transição (slide--transition)
+- [ ] Testar todos em PDF
+
+### Pacote 2: Síntese Executiva — Conteúdo ⚪ AGUARDANDO
+- [ ] Slide 2: Sumário
+- [ ] Slide 3: Origem do Projeto
+- [ ] Slide 4: O Desafio
+- [ ] Slide 5: Jornada
+- [ ] Slide 6: Principais Entregas
+- [ ] Slide 7: Aprendizados-Chave
+- [ ] Slide 8: Direcionamento 2026
+- [ ] Slide 9: Próximos Passos
+- [ ] Slide 10: Transição
+- [ ] Validação do usuário
+
+### Pacote 3: Seções 01-02 — Contexto e Metodologia ⚪ AGUARDANDO
+- [ ] Slides 11-15: Contexto e Justificativa
+- [ ] Slides 16-18: Metodologia
+- [ ] Validação do usuário
+
+### Pacote 4: Seção 03 — Resultados ⚪ AGUARDANDO
+- [ ] Slides 19-26: Resultados (8 slides)
+- [ ] Validação do usuário
+
+### Pacote 5: Seções 04-05 — Aprendizados e Direcionamento ⚪ AGUARDANDO
+- [ ] Slides 27-30: Aprendizados
+- [ ] Slides 31-35: Direcionamento 2026
+- [ ] Validação do usuário
+
+### Pacote 6: Revisão Final ⚪ AGUARDANDO
+- [ ] Ajustes de feedback
+- [ ] Teste completo de PDF
+- [ ] Navegação funcionando
+- [ ] Commit final
+
+---
+
+## PROTOCOLO DE TRABALHO
+
+### Ao iniciar um pacote:
+1. Ler este README
+2. Verificar status do pacote anterior
+3. Confirmar escopo com usuário se necessário
+
+### Durante o pacote:
+1. Trabalhar nos itens listados
+2. Fazer commits incrementais
+3. Testar PDF a cada layout novo
+
+### Ao concluir um pacote:
+1. Atualizar status dos itens ([ ] → [x])
+2. Atualizar status do pacote (⚪ → ✅)
+3. Fazer commit com resumo
+4. **AGUARDAR VALIDAÇÃO** antes de prosseguir
+
+### Legenda de Status
+- ⚪ Não iniciado
+- 🟡 Em andamento / Próximo
+- ✅ Concluído
+- ❌ Bloqueado
+
+---
+
+## NAVEGAÇÃO (Breadcrumbs)
+
+```
+Início
+├── Síntese Executiva
+│   ├── Origem
+│   ├── Jornada
+│   ├── Entregas
+│   └── Direcionamento
+├── Detalhamento
+│   ├── 01 Contexto
+│   ├── 02 Metodologia
+│   ├── 03 Resultados
+│   ├── 04 Aprendizados
+│   └── 05 Direcionamento
+└── Encerramento
+```
+
+---
+
+## LAYOUTS DISPONÍVEIS
+
+| Classe | Uso | Criado |
+|--------|-----|--------|
+| `slide--cover` | Capa abertura | ✅ |
+| `slide--closing` | Capa fechamento | ✅ |
+| `slide--section` | Capa de seção | ⚪ |
+| `slide--toc` | Sumário | ⚪ |
+| `slide--metric` | Número em destaque | ⚪ |
+| `slide--timeline` | Linha do tempo | ⚪ |
+| `slide--table` | Tabela | ⚪ |
+| `slide--transition` | Transição entre partes | ⚪ |
+| `layout-2x2` | Grid 2x2 | ⚪ |
+| `layout-4col` | Grid 4 colunas | ⚪ |
+| `layout-2col` | Grid 2 colunas | ⚪ |
+
+---
+
+*Atualizar este plano após cada pacote de trabalho concluído.*
