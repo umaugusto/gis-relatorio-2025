@@ -1,0 +1,352 @@
+/* ===========================================
+   MAIN.CSS — Estilos Globais e Layouts
+   Template de Apresentação HTML/CSS
+   =========================================== */
+
+/* ==========================================
+   PRINT/PDF — Configuração crítica
+   ========================================== */
+
+@page {
+  size: 1280px 720px;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    background: white;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .slide {
+    width: 1280px !important;
+    height: 720px !important;
+    margin: 0 !important;
+    padding: var(--slide-padding) !important;
+    box-shadow: none !important;
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-after: page;
+    break-inside: avoid;
+  }
+
+  .presentation {
+    width: 1280px;
+    gap: 0;
+  }
+}
+
+/* ==========================================
+   BASE — Reset e fundações
+   ========================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-gray-100);
+  padding: var(--space-6);
+}
+
+/* ==========================================
+   TIPOGRAFIA
+   ========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+
+p {
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+}
+
+.text-hero {
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.03em;
+}
+
+.text-small {
+  font-size: var(--font-size-small);
+}
+
+.text-tiny {
+  font-size: var(--font-size-tiny);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ==========================================
+   PRESENTATION CONTAINER
+   ========================================== */
+
+.presentation {
+  width: 100%;
+  max-width: var(--slide-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* ==========================================
+   SLIDE — Estrutura base
+   ========================================== */
+
+.slide {
+  width: var(--slide-width);
+  height: var(--slide-height);
+  background: var(--color-background);
+  padding: var(--slide-padding);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+
+  /* Grid de 3 linhas: header, content, footer */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+/* ==========================================
+   SLIDE HEADER
+   ========================================== */
+
+.slide__header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-5);
+}
+
+.slide__breadcrumb {
+  font-size: var(--font-size-tiny);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.slide__logo {
+  height: 24px;
+  opacity: 0.6;
+}
+
+/* ==========================================
+   SLIDE CONTENT
+   ========================================== */
+
+.slide__content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-5);
+  overflow: hidden;
+}
+
+/* ==========================================
+   SLIDE FOOTER
+   ========================================== */
+
+.slide__footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-5);
+  font-size: var(--font-size-tiny);
+  color: var(--color-text-tertiary);
+}
+
+.slide__pagination {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================
+   SLIDE COVER (Abertura)
+   ========================================== */
+
+.slide--cover {
+  background: var(--color-gray-900);
+  color: var(--color-text-inverse);
+}
+
+.slide--cover .slide__header,
+.slide--cover .slide__footer {
+  border-color: var(--color-gray-700);
+}
+
+.slide--cover .slide__breadcrumb,
+.slide--cover .slide__footer {
+  color: var(--color-gray-400);
+}
+
+.slide--cover .slide__content {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slide--cover .cover__label {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-4);
+}
+
+.slide--cover .cover__title {
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+  max-width: 900px;
+}
+
+.slide--cover .cover__subtitle {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-gray-300);
+  max-width: 700px;
+  margin-top: var(--space-4);
+}
+
+.slide--cover .cover__meta {
+  display: flex;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-gray-700);
+}
+
+.slide--cover .cover__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.slide--cover .cover__meta-label {
+  font-size: var(--font-size-tiny);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gray-500);
+}
+
+.slide--cover .cover__meta-value {
+  font-size: var(--font-size-small);
+  color: var(--color-gray-300);
+}
+
+/* ==========================================
+   SLIDE CLOSING (Fechamento)
+   ========================================== */
+
+.slide--closing {
+  background: var(--color-gray-50);
+}
+
+.slide--closing .slide__content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide--closing .closing__title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-light);
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-4);
+}
+
+.slide--closing .closing__subtitle {
+  font-size: var(--font-size-body);
+  color: var(--color-gray-500);
+  max-width: 500px;
+}
+
+.slide--closing .closing__contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+.slide--closing .closing__contact-item {
+  font-size: var(--font-size-small);
+  color: var(--color-gray-600);
+}
+
+/* ==========================================
+   SCREEN — Responsividade
+   ========================================== */
+
+@media screen and (max-width: 1400px) {
+  body {
+    padding: var(--space-4);
+  }
+
+  .slide {
+    width: 100%;
+    max-width: var(--slide-width);
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: var(--space-2);
+  }
+
+  .slide {
+    padding: var(--space-5);
+  }
+
+  .slide--cover .cover__title {
+    font-size: var(--font-size-h1);
+  }
+
+  .slide--cover .cover__subtitle {
+    font-size: var(--font-size-body);
+  }
+}

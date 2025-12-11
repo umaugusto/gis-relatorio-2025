@@ -1,0 +1,95 @@
+/* ===========================================
+   DESIGN TOKENS — Wireframe Grayscale
+   Template de Apresentação HTML/CSS
+   =========================================== */
+
+/* Google Fonts - Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ========================================
+     TIPOGRAFIA
+     ======================================== */
+  --font-display: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Hierarquia de tamanhos */
+  --font-size-hero: 72px;
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h3: 24px;
+  --font-size-body: 18px;
+  --font-size-small: 14px;
+  --font-size-tiny: 12px;
+
+  /* Pesos */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Alturas de linha */
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* ========================================
+     CORES — Escala de Cinza (Wireframe)
+     ======================================== */
+  --color-gray-900: #1a1a1a;
+  --color-gray-800: #2d2d2d;
+  --color-gray-700: #4a4a4a;
+  --color-gray-600: #5c5c5c;
+  --color-gray-500: #737373;
+  --color-gray-400: #8f8f8f;
+  --color-gray-300: #a3a3a3;
+  --color-gray-200: #d4d4d4;
+  --color-gray-100: #e5e5e5;
+  --color-gray-50: #f5f5f5;
+  --color-white: #ffffff;
+
+  /* Semânticos */
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-tertiary: var(--color-gray-400);
+  --color-text-inverse: var(--color-white);
+  --color-background: var(--color-white);
+  --color-background-alt: var(--color-gray-50);
+  --color-border: var(--color-gray-200);
+  --color-border-strong: var(--color-gray-300);
+
+  /* ========================================
+     DIMENSÕES DO SLIDE
+     ======================================== */
+  --slide-width: 1280px;
+  --slide-height: 720px;
+  --slide-padding: 64px;
+
+  /* ========================================
+     ESPAÇAMENTO
+     ======================================== */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ========================================
+     EFEITOS
+     ======================================== */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.10);
+  
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+}
