@@ -531,15 +531,15 @@ Este plano orienta a construção da apresentação. Atualizar após cada pacote
 | # | Slide | Layout | Status |
 |---|-------|--------|--------|
 | 1 | Capa | Hero escuro | ✅ Criado |
-| 2 | Sumário | Lista navegável | ⚪ Pendente |
-| 3 | Origem do Projeto | Número destaque | ⚪ Pendente |
-| 4 | O Desafio | Texto centralizado | ⚪ Pendente |
-| 5 | Jornada | Timeline horizontal | ⚪ Pendente |
-| 6 | Principais Entregas | Lista com ícones | ⚪ Pendente |
-| 7 | Aprendizados-Chave | Grid 2x2 | ⚪ Pendente |
-| 8 | Direcionamento 2026 | Diagrama 4 pilares | ⚪ Pendente |
-| 9 | Próximos Passos | Timeline 3 fases | ⚪ Pendente |
-| 10 | Transição | Minimalista | ⚪ Pendente |
+| 2 | Sumário | Lista navegável | ✅ Criado |
+| 3 | Origem do Projeto | Número destaque | ✅ Criado |
+| 4 | O Desafio | Texto centralizado | ✅ Criado |
+| 5 | Jornada | Timeline horizontal | ✅ Criado |
+| 6 | Principais Entregas | Grid 3 colunas | ✅ Criado |
+| 7 | Aprendizados-Chave | Grid 2x2 | ✅ Criado |
+| 8 | Direcionamento 2026 | Grid 4 colunas | ✅ Criado |
+| 9 | Próximos Passos | Timeline 3 fases | ✅ Criado |
+| 10 | Transição | Minimalista | ✅ Criado |
 
 ---
 
@@ -626,17 +626,17 @@ Este plano orienta a construção da apresentação. Atualizar após cada pacote
 - [x] Layout: Transição (slide--transition)
 - [x] Validação do usuário
 
-### Pacote 2: Síntese Executiva — Conteúdo 🟡 PRÓXIMO
-- [ ] Slide 2: Sumário
-- [ ] Slide 3: Origem do Projeto
-- [ ] Slide 4: O Desafio
-- [ ] Slide 5: Jornada
-- [ ] Slide 6: Principais Entregas
-- [ ] Slide 7: Aprendizados-Chave
-- [ ] Slide 8: Direcionamento 2026
-- [ ] Slide 9: Próximos Passos
-- [ ] Slide 10: Transição
-- [ ] Validação do usuário
+### Pacote 2: Síntese Executiva — Conteúdo ✅ CONCLUÍDO
+- [x] Slide 2: Sumário
+- [x] Slide 3: Origem do Projeto
+- [x] Slide 4: O Desafio
+- [x] Slide 5: Jornada
+- [x] Slide 6: Principais Entregas
+- [x] Slide 7: Aprendizados-Chave
+- [x] Slide 8: Direcionamento 2026
+- [x] Slide 9: Próximos Passos
+- [x] Slide 10: Transição
+- [ ] **AGUARDANDO VALIDAÇÃO**
 
 ### Pacote 3: Seções 01-02 — Contexto e Metodologia ⚪ AGUARDANDO
 - [ ] Slides 11-15: Contexto e Justificativa
