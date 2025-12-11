@@ -336,6 +336,371 @@ p {
 }
 
 /* ==========================================
+   SLIDE SECTION (Capa de Seção)
+   ========================================== */
+
+.slide--section {
+  background: var(--color-gray-900);
+  color: var(--color-text-inverse);
+}
+
+.slide--section .slide__header,
+.slide--section .slide__footer {
+  border-color: var(--color-gray-700);
+}
+
+.slide--section .nav__item,
+.slide--section .nav__separator,
+.slide--section .logo__placeholder,
+.slide--section .slide__footer {
+  color: var(--color-gray-400);
+}
+
+.slide--section .slide__content {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slide--section .section__number {
+  font-size: 180px;
+  font-weight: var(--font-weight-light);
+  line-height: 0.85;
+  color: var(--color-gray-700);
+  letter-spacing: -0.05em;
+  margin-bottom: var(--space-4);
+}
+
+.slide--section .section__title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-light);
+  color: var(--color-white);
+  letter-spacing: -0.02em;
+  max-width: 700px;
+}
+
+.slide--section .section__subtitle {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-gray-400);
+  margin-top: var(--space-3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ==========================================
+   SLIDE TOC (Sumário)
+   ========================================== */
+
+.slide--toc .slide__content {
+  justify-content: flex-start;
+  padding-top: var(--space-5);
+}
+
+.slide--toc .toc__title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-7);
+}
+
+.slide--toc .toc__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.slide--toc .toc__item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  text-decoration: none;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: all 0.2s ease;
+}
+
+.slide--toc .toc__item:hover {
+  padding-left: var(--space-3);
+  background: var(--color-gray-50);
+}
+
+.slide--toc .toc__number {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-light);
+  color: var(--color-gray-300);
+  min-width: 48px;
+}
+
+.slide--toc .toc__label {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
+}
+
+.slide--toc .toc__desc {
+  font-size: var(--font-size-small);
+  color: var(--color-text-tertiary);
+  margin-left: auto;
+}
+
+/* ==========================================
+   SLIDE METRIC (Número em Destaque)
+   ========================================== */
+
+.slide--metric .slide__content {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slide--metric .metric__value {
+  font-size: 200px;
+  font-weight: var(--font-weight-light);
+  line-height: 0.85;
+  color: var(--color-gray-900);
+  letter-spacing: -0.05em;
+}
+
+.slide--metric .metric__label {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-4);
+  max-width: 500px;
+}
+
+.slide--metric .metric__context {
+  font-size: var(--font-size-body);
+  color: var(--color-text-tertiary);
+  margin-top: var(--space-6);
+  max-width: 600px;
+  line-height: var(--line-height-relaxed);
+}
+
+/* ==========================================
+   SLIDE TIMELINE (Linha do Tempo)
+   ========================================== */
+
+.slide--timeline .slide__content {
+  justify-content: flex-start;
+  padding-top: var(--space-4);
+}
+
+.slide--timeline .timeline__title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.timeline {
+  display: flex;
+  gap: var(--space-5);
+  position: relative;
+  padding-top: var(--space-6);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-gray-200);
+}
+
+.timeline__item {
+  flex: 1;
+  position: relative;
+  padding-top: var(--space-5);
+}
+
+.timeline__item::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--color-gray-300);
+  border-radius: 50%;
+}
+
+.timeline__item--active::before {
+  background: var(--color-gray-900);
+}
+
+.timeline__date {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-2);
+}
+
+.timeline__label {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.timeline__desc {
+  font-size: var(--font-size-small);
+  color: var(--color-text-tertiary);
+  line-height: var(--line-height-normal);
+}
+
+/* ==========================================
+   LAYOUTS DE GRID
+   ========================================== */
+
+/* Grid 2 colunas */
+.layout-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  width: 100%;
+}
+
+/* Grid 2x2 */
+.layout-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--space-5);
+  width: 100%;
+  height: 100%;
+}
+
+/* Grid 4 colunas */
+.layout-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  width: 100%;
+}
+
+/* Grid 3 colunas */
+.layout-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  width: 100%;
+}
+
+/* Card genérico para grids */
+.card {
+  background: var(--color-gray-50);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.card__title {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.card__text {
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.card--dark {
+  background: var(--color-gray-800);
+}
+
+.card--dark .card__title {
+  color: var(--color-white);
+}
+
+.card--dark .card__text {
+  color: var(--color-gray-300);
+}
+
+/* ==========================================
+   SLIDE TABLE (Tabela)
+   ========================================== */
+
+.slide--table .slide__content {
+  justify-content: flex-start;
+  padding-top: var(--space-4);
+}
+
+.slide--table .table__title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-5);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: var(--color-gray-50);
+}
+
+.table td {
+  font-size: var(--font-size-small);
+  color: var(--color-text-primary);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ==========================================
+   SLIDE TRANSITION (Transição)
+   ========================================== */
+
+.slide--transition {
+  background: var(--color-gray-50);
+}
+
+.slide--transition .slide__content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide--transition .transition__label {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-4);
+}
+
+.slide--transition .transition__title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-light);
+  color: var(--color-gray-900);
+  letter-spacing: -0.02em;
+}
+
+/* ==========================================
    SCREEN — Responsividade
    ========================================== */
 
