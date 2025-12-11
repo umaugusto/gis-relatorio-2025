@@ -154,16 +154,48 @@ p {
   margin-bottom: var(--space-5);
 }
 
-.slide__breadcrumb {
-  font-size: var(--font-size-tiny);
-  color: var(--color-text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+/* Navegação (breadcrumbs) */
+.slide__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
 }
 
+.nav__item {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-tertiary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: color 0.2s ease;
+}
+
+.nav__item:hover {
+  color: var(--color-text-secondary);
+}
+
+.nav__item--active {
+  color: var(--color-text-secondary);
+}
+
+.nav__separator {
+  font-size: var(--font-size-tiny);
+  color: var(--color-gray-300);
+}
+
+/* Logo */
 .slide__logo {
-  height: 24px;
-  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  height: 28px;
+}
+
+.logo__placeholder {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.15em;
+  color: var(--color-text-tertiary);
 }
 
 /* ==========================================
@@ -213,9 +245,16 @@ p {
   border-color: var(--color-gray-700);
 }
 
-.slide--cover .slide__breadcrumb,
+.slide--cover .nav__item,
+.slide--cover .nav__separator,
+.slide--cover .logo__placeholder,
 .slide--cover .slide__footer {
   color: var(--color-gray-400);
+}
+
+.slide--cover .nav__item:hover,
+.slide--cover .nav__item--active {
+  color: var(--color-gray-200);
 }
 
 .slide--cover .slide__content {
@@ -290,30 +329,10 @@ p {
 }
 
 .slide--closing .closing__title {
-  font-size: var(--font-size-h1);
+  font-size: 120px;
   font-weight: var(--font-weight-light);
   color: var(--color-gray-900);
-  margin-bottom: var(--space-4);
-}
-
-.slide--closing .closing__subtitle {
-  font-size: var(--font-size-body);
-  color: var(--color-gray-500);
-  max-width: 500px;
-}
-
-.slide--closing .closing__contact {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  margin-top: var(--space-7);
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--color-border);
-}
-
-.slide--closing .closing__contact-item {
-  font-size: var(--font-size-small);
-  color: var(--color-gray-600);
+  letter-spacing: -0.03em;
 }
 
 /* ==========================================
