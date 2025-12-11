@@ -971,27 +971,259 @@
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
       <div class="slide__content">
-        <h2 style="margin-bottom: var(--space-5);">Entregas da Fase CBA</h2>
-        <div class="layout-3col">
-          <div class="card">
-            <h3 class="card__title">Pathways Clínicos</h3>
-            <p class="card__text">Diabetes Mellitus tipo 2 e Hipertensão Arterial atualizados conforme padrões JCI.</p>
+        <style>
+          .entregas-cba {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: var(--space-6);
+            height: 100%;
+          }
+          
+          .entregas-cba__sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+          }
+          
+          .entregas-cba__title {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--einstein-azul-escuro);
+            margin: 0;
+            line-height: 1.2;
+          }
+          
+          .entregas-cba__subtitle {
+            font-size: 14px;
+            color: var(--einstein-gray-500);
+            margin: 0;
+            line-height: 1.5;
+          }
+          
+          .entregas-cba__stats {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+            padding: var(--space-4);
+            background: linear-gradient(135deg, var(--einstein-azul-escuro) 0%, var(--einstein-azul-medio) 100%);
+            border-radius: 12px;
+            margin-top: auto;
+          }
+          
+          .entregas-cba__stat {
+            display: flex;
+            align-items: baseline;
+            gap: var(--space-2);
+          }
+          
+          .entregas-cba__stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+          }
+          
+          .entregas-cba__stat-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.85);
+          }
+          
+          .entregas-cba__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: var(--space-3);
+          }
+          
+          .entrega-card {
+            background: white;
+            border: 1px solid var(--einstein-gray-100);
+            border-radius: 10px;
+            padding: var(--space-4);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .entrega-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--einstein-azul-medio);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+          }
+          
+          .entrega-card--highlight {
+            background: linear-gradient(135deg, rgba(0,150,210,0.08) 0%, rgba(0,219,255,0.05) 100%);
+            border-color: var(--einstein-azul-medio);
+          }
+          
+          .entrega-card--highlight::before {
+            opacity: 1;
+          }
+          
+          .entrega-card__header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+          }
+          
+          .entrega-card__icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: var(--einstein-gray-50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--einstein-azul-medio);
+            flex-shrink: 0;
+          }
+          
+          .entrega-card--highlight .entrega-card__icon {
+            background: var(--einstein-azul-medio);
+            color: white;
+          }
+          
+          .entrega-card__title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--einstein-azul-escuro);
+            margin: 0;
+            line-height: 1.3;
+          }
+          
+          .entrega-card__badge {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: var(--einstein-azul-claro);
+            color: var(--einstein-azul-escuro);
+            margin-left: auto;
+          }
+          
+          .entrega-card__text {
+            font-size: 13px;
+            color: var(--einstein-gray-700);
+            line-height: 1.5;
+            margin: 0;
+          }
+          
+          .entrega-card__detail {
+            font-size: 11px;
+            color: var(--einstein-gray-500);
+            margin: 0;
+            padding-top: var(--space-1);
+            border-top: 1px dashed var(--einstein-gray-100);
+          }
+        </style>
+        
+        <div class="entregas-cba">
+          <div class="entregas-cba__sidebar">
+            <h2 class="entregas-cba__title">Entregas da Fase CBA</h2>
+            <p class="entregas-cba__subtitle">Maio–Agosto 2025: preparação para certificação JCI organizada por capítulos (IPSG, MMU, ACC) com grupo de trabalho semanal reunindo práticas assistenciais, coordenação do cuidado e qualidade.</p>
+            
+            <div class="entregas-cba__stats">
+              <div class="entregas-cba__stat">
+                <span class="entregas-cba__stat-value">12</span>
+                <span class="entregas-cba__stat-label">reuniões de alinhamento</span>
+              </div>
+              <div class="entregas-cba__stat">
+                <span class="entregas-cba__stat-value">62</span>
+                <span class="entregas-cba__stat-label">atividades mapeadas</span>
+              </div>
+              <div class="entregas-cba__stat">
+                <span class="entregas-cba__stat-value">5</span>
+                <span class="entregas-cba__stat-label">entregas principais</span>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3 class="card__title">Conselho Consultivo</h3>
-            <p class="card__text">Formação do conselho com representantes da comunidade atendida.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Siglário</h3>
-            <p class="card__text">Início da padronização de abreviaturas institucionais.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Processos</h3>
-            <p class="card__text">Mapeamento de navegação e coordenação do cuidado.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Metas de Segurança</h3>
-            <p class="card__text">Identificação do paciente, higiene das mãos, checklist de procedimento seguro.</p>
+          
+          <div class="entregas-cba__grid">
+            <div class="entrega-card entrega-card--highlight">
+              <div class="entrega-card__header">
+                <div class="entrega-card__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14,2 14,8 20,8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                  </svg>
+                </div>
+                <h3 class="entrega-card__title">Pathways Clínicos</h3>
+                <span class="entrega-card__badge">JCI</span>
+              </div>
+              <p class="entrega-card__text">Protocolos atualizados para Diabetes Mellitus tipo 2 e Hipertensão Arterial, alinhados aos padrões internacionais de acreditação.</p>
+              <p class="entrega-card__detail">Capítulo ACC — Acesso e Continuidade do Cuidado</p>
+            </div>
+            
+            <div class="entrega-card">
+              <div class="entrega-card__header">
+                <div class="entrega-card__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <h3 class="entrega-card__title">Conselho Consultivo</h3>
+              </div>
+              <p class="entrega-card__text">Formação do conselho com representantes da comunidade atendida, garantindo voz do paciente nas decisões.</p>
+              <p class="entrega-card__detail">Requisito de participação comunitária</p>
+            </div>
+            
+            <div class="entrega-card">
+              <div class="entrega-card__header">
+                <div class="entrega-card__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </div>
+                <h3 class="entrega-card__title">Siglário Institucional</h3>
+              </div>
+              <p class="entrega-card__text">Início da padronização de abreviaturas médicas, reduzindo ambiguidade na documentação clínica.</p>
+              <p class="entrega-card__detail">Segurança na comunicação entre equipes</p>
+            </div>
+            
+            <div class="entrega-card">
+              <div class="entrega-card__header">
+                <div class="entrega-card__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                  </svg>
+                </div>
+                <h3 class="entrega-card__title">Processos de Navegação</h3>
+              </div>
+              <p class="entrega-card__text">Mapeamento do fluxo de navegação e coordenação do cuidado entre especialidades e níveis de atenção.</p>
+              <p class="entrega-card__detail">Capítulo ACC — Coordenação do Cuidado</p>
+            </div>
+            
+            <div class="entrega-card entrega-card--highlight" style="grid-column: span 2;">
+              <div class="entrega-card__header">
+                <div class="entrega-card__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9,12 11,14 15,10"/>
+                  </svg>
+                </div>
+                <h3 class="entrega-card__title">Metas Internacionais de Segurança do Paciente (IPSG)</h3>
+                <span class="entrega-card__badge">Prioritário</span>
+              </div>
+              <p class="entrega-card__text">Implementação das três primeiras metas: identificação correta do paciente com dupla checagem, protocolo de higiene das mãos com adesão monitorada, e checklist de procedimento seguro para intervenções ambulatoriais.</p>
+              <p class="entrega-card__detail">IPSG.1 Identificação do Paciente · IPSG.5 Higiene das Mãos · IPSG.4 Procedimento Seguro</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1197,23 +1429,266 @@
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
       <div class="slide__content">
-        <h2 style="margin-bottom: var(--space-5);">O que Funcionou</h2>
-        <div class="layout-2x2">
-          <div class="card">
-            <h3 class="card__title">Sprints mensais</h3>
-            <p class="card__text">Ciclos de um mês deram tempo para execução. Semanais consumiam tempo em alinhamento.</p>
+        <style>
+          .funcionou {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            gap: var(--space-5);
+            height: 100%;
+          }
+          
+          .funcionou__header {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: var(--space-3);
+            border-bottom: 2px solid var(--einstein-gray-100);
+          }
+          
+          .funcionou__title {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--einstein-azul-escuro);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+          }
+          
+          .funcionou__title-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+          }
+          
+          .funcionou__insight {
+            font-size: 14px;
+            color: var(--einstein-gray-500);
+            font-style: italic;
+            max-width: 400px;
+            text-align: right;
+            line-height: 1.4;
+          }
+          
+          .funcionou__col {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+          }
+          
+          .func-card {
+            background: white;
+            border: 1px solid var(--einstein-gray-100);
+            border-radius: 12px;
+            padding: var(--space-4);
+            display: flex;
+            gap: var(--space-4);
+            flex: 1;
+            position: relative;
+            transition: all 0.2s ease;
+          }
+          
+          .func-card::after {
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.15;
+          }
+          
+          .func-card--featured {
+            background: linear-gradient(135deg, rgba(16,185,129,0.08) 0%, rgba(5,150,105,0.04) 100%);
+            border-color: #10B981;
+          }
+          
+          .func-card--featured::after {
+            opacity: 0.3;
+          }
+          
+          .func-card__icon {
+            width: 48px;
+            height: 48px;
+            background: var(--einstein-gray-50);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--einstein-azul-medio);
+            flex-shrink: 0;
+          }
+          
+          .func-card--featured .func-card__icon {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            color: white;
+          }
+          
+          .func-card__content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+            flex: 1;
+          }
+          
+          .func-card__header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+          }
+          
+          .func-card__title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--einstein-azul-escuro);
+            margin: 0;
+          }
+          
+          .func-card__badge {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: #D1FAE5;
+            color: #065F46;
+          }
+          
+          .func-card__text {
+            font-size: 13px;
+            color: var(--einstein-gray-700);
+            line-height: 1.5;
+            margin: 0;
+          }
+          
+          .func-card__result {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding-top: var(--space-2);
+            margin-top: auto;
+            border-top: 1px dashed var(--einstein-gray-100);
+          }
+          
+          .func-card__result-icon {
+            color: #10B981;
+          }
+          
+          .func-card__result-text {
+            font-size: 12px;
+            color: #065F46;
+            font-weight: 500;
+          }
+        </style>
+        
+        <div class="funcionou">
+          <div class="funcionou__header">
+            <h2 class="funcionou__title">
+              <span class="funcionou__title-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20,6 9,17 4,12"/>
+                </svg>
+              </span>
+              O que Funcionou
+            </h2>
+            <p class="funcionou__insight">"Priorizar o que está sob controle da equipe — menos dependências, mais entregas."</p>
           </div>
-          <div class="card">
-            <h3 class="card__title">Checkpoints com liderança</h3>
-            <p class="card__text">Momentos de visibilidade e validação. Correção de rumo antes de investir energia em caminhos errados.</p>
+          
+          <div class="funcionou__col">
+            <div class="func-card func-card--featured">
+              <div class="func-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="func-card__content">
+                <div class="func-card__header">
+                  <h3 class="func-card__title">Sprints Mensais</h3>
+                  <span class="func-card__badge">Cadência ideal</span>
+                </div>
+                <p class="func-card__text">Ciclos de um mês deram tempo para execução real entre encontros. Sprints semanais consumiam tempo em alinhamento e deixavam pouco espaço para trabalho substantivo — inadequado para equipe com múltiplas atribuições operacionais.</p>
+                <div class="func-card__result">
+                  <svg class="func-card__result-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+                  <span class="func-card__result-text">Tempo adequado para entregas entre checkpoints</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="func-card">
+              <div class="func-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="func-card__content">
+                <h3 class="func-card__title">Checkpoints com Liderança</h3>
+                <p class="func-card__text">Reuniões periódicas com a gestão criaram momentos de visibilidade e validação. Permitiram apresentar andamento e receber direcionamento antes de investir energia em caminhos que precisariam ser revistos.</p>
+                <div class="func-card__result">
+                  <svg class="func-card__result-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+                  <span class="func-card__result-text">Correção de rumo antes do retrabalho</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3 class="card__title">Clareza de papéis (REACE)</h3>
-            <p class="card__text">Explícito quem decide, quem executa, quem é informado. Discussões mais objetivas.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">GT de documentos</h3>
-            <p class="card__text">Funcionou de forma consistente durante todo o ciclo. Escopo claro, participantes comprometidos.</p>
+          
+          <div class="funcionou__col">
+            <div class="func-card">
+              <div class="func-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div class="func-card__content">
+                <h3 class="func-card__title">Clareza de Papéis (REACE)</h3>
+                <p class="func-card__text">A metodologia REACE ajudou a evitar "muitos donos, nenhum dono". Quando ficava explícito quem decidia, quem executava e quem precisava ser informado, as discussões se tornavam mais objetivas e produtivas.</p>
+                <div class="func-card__result">
+                  <svg class="func-card__result-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+                  <span class="func-card__result-text">Decisões mais rápidas e menos conflitos</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="func-card func-card--featured">
+              <div class="func-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+              </div>
+              <div class="func-card__content">
+                <div class="func-card__header">
+                  <h3 class="func-card__title">GT de Documentos</h3>
+                  <span class="func-card__badge">Modelo replicável</span>
+                </div>
+                <p class="func-card__text">Funcionou de forma consistente durante todo o ciclo. Escopo claro, participantes comprometidos, baixa dependência externa. Demonstrou que é possível gerar entregas mesmo em contexto instável.</p>
+                <div class="func-card__result">
+                  <svg class="func-card__result-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>
+                  <span class="func-card__result-text">Pathways e siglário entregues no prazo</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1223,7 +1698,7 @@
       </footer>
     </section>
 
-    <!-- SLIDE 29 — Oportunidades de Melhoria -->
+    <!-- SLIDE 27 — Oportunidades Identificadas -->
     <section class="slide" id="slide-27">
       <header class="slide__header">
         <nav class="slide__nav">
@@ -1231,28 +1706,89 @@
           <span class="nav__separator">/</span>
           <a href="#slide-25" class="nav__item">04 Aprendizados</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-27" class="nav__item nav__item--active">Melhorias</a>
+          <a href="#slide-27" class="nav__item nav__item--active">Oportunidades</a>
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
       <div class="slide__content">
-        <h2 style="margin-bottom: var(--space-5);">Oportunidades de Melhoria</h2>
-        <div class="layout-2x2">
-          <div class="card">
-            <h3 class="card__title">Contexto organizacional</h3>
-            <p class="card__text">Mudanças de gestão, transições de modelo e saída de profissionais geraram ondas que afetaram múltiplas frentes.</p>
+        <style>
+          #slide-27 .aprendizados { display: flex; flex-direction: column; gap: var(--space-2); height: 100%; }
+          #slide-27 .aprendizados__header { display: flex; align-items: center; gap: var(--space-3); }
+          #slide-27 .aprendizados__icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--einstein-azul-medio), var(--einstein-azul-escuro)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; }
+          #slide-27 .aprendizados__title { font-size: 22px; font-weight: 600; color: var(--einstein-azul-escuro); margin: 0; }
+          #slide-27 .aprendizados__subtitle { font-size: 12px; color: var(--einstein-gray-500); margin: 4px 0 0 45px; }
+          #slide-27 .aprendizados__grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: var(--space-2); flex: 1; }
+          #slide-27 .aprendizado-card { background: var(--einstein-gray-50); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 6px; }
+          #slide-27 .aprendizado-card__header { display: flex; align-items: center; gap: 8px; }
+          #slide-27 .aprendizado-card__icon { width: 24px; height: 24px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--einstein-azul-medio); }
+          #slide-27 .aprendizado-card__title { font-size: 12px; font-weight: 600; color: var(--einstein-azul-escuro); margin: 0; line-height: 1.2; }
+          #slide-27 .aprendizado-card__text { font-size: 11px; color: var(--einstein-gray-600); line-height: 1.4; margin: 0; }
+          #slide-27 .aprendizado-card__insight { font-size: 10px; color: var(--einstein-azul-medio); font-weight: 500; margin-top: auto; padding-top: 6px; border-top: 1px dashed var(--einstein-gray-200); }
+        </style>
+        
+        <div class="aprendizados">
+          <div class="aprendizados__header">
+            <div class="aprendizados__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h2 class="aprendizados__title">Oportunidades Identificadas</h2>
           </div>
-          <div class="card">
-            <h3 class="card__title">Dependências externas</h3>
-            <p class="card__text">Iniciativas que dependiam de outras áreas travavam ou eram abandonadas. Documentos parados aguardando aprovação.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Sobreposição de escopos</h3>
-            <p class="card__text">Trabalho com diabéticos esbarrou em iniciativas do CIA. Não estava claro onde terminava um grupo e começava outro.</p>
-          </div>
-          <div class="card">
-            <h3 class="card__title">Participação inconsistente</h3>
-            <p class="card__text">Alguns GTs perderam força quando integrantes-chave entraram de férias ou foram realocados.</p>
+          <p class="aprendizados__subtitle">Insights do ciclo 2025 que orientam o planejamento de 2026</p>
+          
+          <div class="aprendizados__grid">
+            <div class="aprendizado-card">
+              <div class="aprendizado-card__header">
+                <div class="aprendizado-card__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg></div>
+                <h3 class="aprendizado-card__title">Contexto Organizacional</h3>
+              </div>
+              <p class="aprendizado-card__text">Mudanças de gestão e transições de modelo de cuidado demandaram flexibilidade constante da equipe ao longo do ciclo.</p>
+              <p class="aprendizado-card__insight">→ Priorizar iniciativas com menor dependência de fatores externos</p>
+            </div>
+            
+            <div class="aprendizado-card">
+              <div class="aprendizado-card__header">
+                <div class="aprendizado-card__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+                <h3 class="aprendizado-card__title">Integração de Dados</h3>
+              </div>
+              <p class="aprendizado-card__text">Múltiplas fontes de informação (Cockpit, Portal, Epidemiologia) geraram oportunidade de unificação e padronização.</p>
+              <p class="aprendizado-card__insight">→ Estabelecer fonte única de verdade para indicadores</p>
+            </div>
+            
+            <div class="aprendizado-card">
+              <div class="aprendizado-card__header">
+                <div class="aprendizado-card__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="9" r="7"/><circle cx="15" cy="15" r="7"/></svg></div>
+                <h3 class="aprendizado-card__title">Alinhamento de Frentes</h3>
+              </div>
+              <p class="aprendizado-card__text">Trabalhos em andamento no CIA revelaram oportunidade de maior coordenação entre iniciativas paralelas.</p>
+              <p class="aprendizado-card__insight">→ Mapear iniciativas existentes antes de iniciar novas</p>
+            </div>
+            
+            <div class="aprendizado-card">
+              <div class="aprendizado-card__header">
+                <div class="aprendizado-card__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+                <h3 class="aprendizado-card__title">Autonomia de Entrega</h3>
+              </div>
+              <p class="aprendizado-card__text">Iniciativas com dependência de outras áreas tiveram ritmo mais lento. SharePoint demonstrou valor de escopo autocontido.</p>
+              <p class="aprendizado-card__insight">→ Estruturar entregas que a equipe pode completar</p>
+            </div>
+            
+            <div class="aprendizado-card">
+              <div class="aprendizado-card__header">
+                <div class="aprendizado-card__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+                <h3 class="aprendizado-card__title">Cadência de Encontros</h3>
+              </div>
+              <p class="aprendizado-card__text">GTs funcionaram melhor com grupo menor e comprometido. Sprints mensais mais produtivos que semanais.</p>
+              <p class="aprendizado-card__insight">→ Núcleo focado com contribuições claras</p>
+            </div>
+            
+            <div class="aprendizado-card">
+              <div class="aprendizado-card__header">
+                <div class="aprendizado-card__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg></div>
+                <h3 class="aprendizado-card__title">Memória Institucional</h3>
+              </div>
+              <p class="aprendizado-card__text">Informação dispersa dificulta continuidade. Processos e decisões documentados facilitam onboarding e consulta.</p>
+              <p class="aprendizado-card__insight">→ SharePoint como repositório centralizado</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1262,7 +1798,7 @@
       </footer>
     </section>
 
-    <!-- SLIDE 30 — Heurísticas para 2026 -->
+    <!-- SLIDE 28 — Heurísticas para 2026 -->
     <section class="slide" id="slide-28">
       <header class="slide__header">
         <nav class="slide__nav">
@@ -1324,7 +1860,7 @@
       </footer>
     </section>
 
-    <!-- SLIDE 32 — Tese Central -->
+    <!-- SLIDE 30 — SharePoint 4 Pilares -->
     <section class="slide" id="slide-30">
       <header class="slide__header">
         <nav class="slide__nav">
@@ -1332,30 +1868,7 @@
           <span class="nav__separator">/</span>
           <a href="#slide-29" class="nav__item">05 Direcionamento</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-30" class="nav__item nav__item--active">Tese</a>
-        </nav>
-        <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
-      </header>
-      <div class="slide__content" style="justify-content: center; align-items: center; text-align: center;">
-        <p style="font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-text-tertiary); margin-bottom: var(--space-4);">Tese central</p>
-        <h2 style="font-size: var(--font-size-h2); font-weight: var(--font-weight-light); max-width: 900px; line-height: var(--line-height-snug);">JCI, BSC e SharePoint não são objetivos concorrentes — são manifestações diferentes do mesmo problema de fundo: a fragmentação de informação.</h2>
-        <p style="margin-top: var(--space-5); font-size: var(--font-size-body); color: var(--color-text-tertiary); max-width: 700px;">O SharePoint não é "o que sobrou". É a infraestrutura que permite as outras iniciativas funcionarem.</p>
-      </div>
-      <footer class="slide__footer">
-        <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">30</span>
-      </footer>
-    </section>
-
-    <!-- SLIDE 33 — SharePoint 4 Pilares -->
-    <section class="slide" id="slide-31">
-      <header class="slide__header">
-        <nav class="slide__nav">
-          <a href="#slide-1" class="nav__item">Início</a>
-          <span class="nav__separator">/</span>
-          <a href="#slide-29" class="nav__item">05 Direcionamento</a>
-          <span class="nav__separator">/</span>
-          <a href="#slide-31" class="nav__item nav__item--active">4 Pilares</a>
+          <a href="#slide-30" class="nav__item nav__item--active">4 Pilares</a>
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
@@ -1382,19 +1895,19 @@
       </div>
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">31</span>
+        <span class="slide__pagination">30</span>
       </footer>
     </section>
 
-    <!-- SLIDE 34 — Recomendações -->
-    <section class="slide" id="slide-32">
+    <!-- SLIDE 31 — Recomendações -->
+    <section class="slide" id="slide-31">
       <header class="slide__header">
         <nav class="slide__nav">
           <a href="#slide-1" class="nav__item">Início</a>
           <span class="nav__separator">/</span>
           <a href="#slide-29" class="nav__item">05 Direcionamento</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-32" class="nav__item nav__item--active">Recomendações</a>
+          <a href="#slide-31" class="nav__item nav__item--active">Recomendações</a>
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
@@ -1421,19 +1934,19 @@
       </div>
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">32</span>
+        <span class="slide__pagination">31</span>
       </footer>
     </section>
 
-    <!-- SLIDE 35 — Cronograma 2026 -->
-    <section class="slide slide--timeline" id="slide-33">
+    <!-- SLIDE 32 — Cronograma 2026 -->
+    <section class="slide slide--timeline" id="slide-32">
       <header class="slide__header">
         <nav class="slide__nav">
           <a href="#slide-1" class="nav__item">Início</a>
           <span class="nav__separator">/</span>
           <a href="#slide-29" class="nav__item">05 Direcionamento</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-33" class="nav__item nav__item--active">Cronograma</a>
+          <a href="#slide-32" class="nav__item nav__item--active">Cronograma</a>
         </nav>
         <div class="slide__logo"><img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita"></div>
       </header>
@@ -1459,19 +1972,19 @@
       </div>
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">33</span>
+        <span class="slide__pagination">32</span>
       </footer>
     </section>
 
     <!-- ==========================================
-         SLIDE 36 — Fechamento
+         SLIDE 33 — Fechamento
          ========================================== -->
-    <section class="slide slide--closing" id="slide-34">
+    <section class="slide slide--closing" id="slide-33">
       <header class="slide__header">
         <nav class="slide__nav">
           <a href="#slide-1" class="nav__item">Início</a>
           <span class="nav__separator">/</span>
-          <a href="#slide-34" class="nav__item nav__item--active">Encerramento</a>
+          <a href="#slide-33" class="nav__item nav__item--active">Encerramento</a>
         </nav>
         <div class="slide__logo">
           <img src="assets/logo-einstein-cor.png" alt="Einstein Hospital Israelita">
@@ -1484,7 +1997,7 @@
 
       <footer class="slide__footer">
         <span>Einstein Hospital Israelita</span>
-        <span class="slide__pagination">34</span>
+        <span class="slide__pagination">33</span>
       </footer>
     </section>
 
