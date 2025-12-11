@@ -22,6 +22,7 @@ Relatorio_Entrega/
 1. **Dois arquivos CSS apenas**: `variables.css` (tokens) e `main.css` (estilos)
 2. **CSS inline apenas para exceções**: quando um slide específico precisa de ajuste que não faz sentido globalizar
 3. **Print-first**: o layout é desenhado para funcionar no PDF primeiro, depois adaptado para tela
+4. **100% estático**: sem animações, transições ou hovers — documento para impressão/PDF
 
 ---
 
