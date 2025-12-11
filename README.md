@@ -511,7 +511,7 @@ No DevTools, regras riscadas (~~strikethrough~~) foram sobrescritas. A regra no 
 Este plano orienta a construção da apresentação. Atualizar após cada pacote de trabalho.
 
 **Última atualização:** 11/12/2025
-**Status geral:** 🟡 Em andamento — Estrutura definida, aguardando construção
+**Status geral:** 🟡 Em andamento — Pacote 1 concluído, aguardando validação
 
 ---
 
@@ -615,18 +615,18 @@ Este plano orienta a construção da apresentação. Atualizar após cada pacote
 - [x] Estrutura de slides planejada
 
 
-### Pacote 1: Layouts Base 🟡 PRÓXIMO
-- [ ] Layout: Capa de Seção (slide--section)
-- [ ] Layout: Sumário (slide--toc)
-- [ ] Layout: Número Destaque (slide--metric)
-- [ ] Layout: Timeline (slide--timeline)
-- [ ] Layout: Grid 2x2 (layout-2x2)
-- [ ] Layout: Grid 4 colunas (layout-4col)
-- [ ] Layout: Tabela (slide--table)
-- [ ] Layout: Transição (slide--transition)
-- [ ] Testar todos em PDF
+### Pacote 1: Layouts Base ✅ CONCLUÍDO
+- [x] Layout: Capa de Seção (slide--section)
+- [x] Layout: Sumário (slide--toc)
+- [x] Layout: Número Destaque (slide--metric)
+- [x] Layout: Timeline (slide--timeline)
+- [x] Layout: Grid 2x2 (layout-2x2)
+- [x] Layout: Grid 4 colunas (layout-4col)
+- [x] Layout: Tabela (slide--table)
+- [x] Layout: Transição (slide--transition)
+- [x] Validação do usuário
 
-### Pacote 2: Síntese Executiva — Conteúdo ⚪ AGUARDANDO
+### Pacote 2: Síntese Executiva — Conteúdo 🟡 PRÓXIMO
 - [ ] Slide 2: Sumário
 - [ ] Slide 3: Origem do Projeto
 - [ ] Slide 4: O Desafio
@@ -712,15 +712,17 @@ Início
 |--------|-----|--------|
 | `slide--cover` | Capa abertura | ✅ |
 | `slide--closing` | Capa fechamento | ✅ |
-| `slide--section` | Capa de seção | ⚪ |
-| `slide--toc` | Sumário | ⚪ |
-| `slide--metric` | Número em destaque | ⚪ |
-| `slide--timeline` | Linha do tempo | ⚪ |
-| `slide--table` | Tabela | ⚪ |
-| `slide--transition` | Transição entre partes | ⚪ |
-| `layout-2x2` | Grid 2x2 | ⚪ |
-| `layout-4col` | Grid 4 colunas | ⚪ |
-| `layout-2col` | Grid 2 colunas | ⚪ |
+| `slide--section` | Capa de seção | ✅ |
+| `slide--toc` | Sumário | ✅ |
+| `slide--metric` | Número em destaque | ✅ |
+| `slide--timeline` | Linha do tempo | ✅ |
+| `slide--table` | Tabela | ✅ |
+| `slide--transition` | Transição entre partes | ✅ |
+| `layout-2x2` | Grid 2x2 | ✅ |
+| `layout-4col` | Grid 4 colunas | ✅ |
+| `layout-2col` | Grid 2 colunas | ✅ |
+| `layout-3col` | Grid 3 colunas | ✅ |
+| `.card` | Card genérico para grids | ✅ |
 
 ---
 
